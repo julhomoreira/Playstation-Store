@@ -77,7 +77,7 @@ li {
 }
 
 .col-1 {
-    margin-left: 50px;
+    margin-left: 40px;
     position: relative;
 }
 
@@ -160,8 +160,9 @@ h4 {
 }
 
 .add-chart img {
-    height: 45px;
-    width: 45px;
+    height:100%;
+    width: 100%;
+    max-width: 55px;
 }
 
 
@@ -239,11 +240,29 @@ h4 {
 /* -responsividade - MMida query -*/
 
 @media (max-width: 750px) {
+.container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    overflow-y: auto;
+}
+
+.row {
+    flex-direction: column-reverse;
+}
+
+.col-2{
+    margin-bottom: 30px;
+}
+.color-box{
+    transform: translateX(70px);
+}
 
 #menu-list{
     position: relative;
     top: 80px;
     left: 70px;
+    overflow: hidden;
     /* display: none; */
 }
 .menu-icon {
